@@ -36,6 +36,7 @@ include(${Geant4_USE_FILE})
 
 #Allows to include .cc files when linking
 file(GLOB sources ${PROJECT_SOURCE_DIR}/src/*.cc)
+#file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 
 # Process the CMakeLists.txt in the 'src' and 'bin' directory.
 add_subdirectory( src )
