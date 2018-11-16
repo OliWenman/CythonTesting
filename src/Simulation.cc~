@@ -1,0 +1,91 @@
+#include "Simulation.hh"
+#include "G4RunManager.hh"
+
+Simulation::Simulation()
+{
+    nTests = 0;
+    std::cout << std::endl << "Welcome to the Cython Simulation test :D " << std::endl; 
+
+    
+    G4int Number = 5;
+    G4RunManager runmanager;
+
+    std::cout << std::endl << " G4number printed successfully" << Number<< std::endl;
+}
+
+Simulation::~Simulation()
+{
+    std::cout << std::endl << "All " << nTests << " of the tests are complete!";
+    std::cout << std::endl << "I hope the Simulation Test was successful XD " << std::endl;
+}
+
+std::vector< int > Simulation::return1D(std::vector< int > Input)
+{
+    std::cout << std::endl << "1DSimulation " << std::endl;
+
+    int rows = Input.size();
+    std::cout << "vector length " << rows << std::endl;
+
+    for (int x = 0; x < rows; x++)
+    {
+        Input.at(x) = x;    
+    }
+    
+    ++nTests;
+    
+    return Input;
+}          
+
+std::vector< std::vector< double > > Simulation::return2D(std::vector< std::vector< double > > Input)
+{
+    std::cout << std::endl << "2DSimulation " << std::endl;
+
+    int rows = Input.size();
+    int cols  = Input[0].size();
+    std::cout << "vector length " << rows << std::endl;
+
+
+    for (int x = 0; x < rows; x++)
+    {
+        for (int y = 0; y < cols; y++)
+        {
+                Input.at(x).at(y) = x*y;
+        }
+    }     
+    
+    ++nTests; 
+    
+    return Input;
+}
+
+void Simulation::Pointer1DSim (std::vector<int>* Input)
+{
+    
+}
+
+void Simulation::Pointer2DSim (std::vector<std::vector<double> >* Input)
+{
+
+}
+
+//Doesn't appear to work
+void Simulation::Reference1DSim(std::vector<int> (&Input))
+{
+    std::cout << std::endl << "Reference1DSim " << std::endl;
+
+    int rows = Input.size();
+    std::cout << "vector length " << rows << std::endl;
+
+    for (int x = 0; x < rows; x++)
+    {
+        Input[x] = x;    
+    }
+    
+    ++nTests;
+}
+
+void Simulation::Reference2DSim(std::vector<std::vector<double> > & Input)
+{
+
+}
+

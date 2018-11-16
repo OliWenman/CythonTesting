@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+import sim
+import numpy as np
+
+Sim = sim.PySimulation()
+
+Array1D = np.zeros(10)
+print type(Array1D)
+print Array1D, '\n'
+NewArray1D = Sim.return1D(Array1D)
+print type(NewArray1D)
+print NewArray1D, '\n'
+
+Array2D = np.zeros((10,10))
+print type(Array2D)
+print Array2D, '\n'
+NewArray2D = Sim.return2D(Array2D)
+print type(NewArray2D)
+print NewArray2D, '\n'
+
+rArray1D = np.zeros(10)
+print type(rArray1D)
+print rArray1D, '\n'
+Sim.Ref1DSim(rArray1D)
+print type(rArray1D)
+print rArray1D, '\n'
+
+x = 5
+print x, '\n'
+Sim.Add(x)
+print x, '\n'
+
