@@ -1,9 +1,0 @@
-/home/xol73553/git/CythonTesting/build/CMakeFiles/rebuild_cache.dir
-/home/xol73553/git/CythonTesting/build/CMakeFiles/ReplicatePythonSourceTree.dir
-/home/xol73553/git/CythonTesting/build/CMakeFiles/edit_cache.dir
-/home/xol73553/git/CythonTesting/build/src/CMakeFiles/rebuild_cache.dir
-/home/xol73553/git/CythonTesting/build/src/CMakeFiles/sim.dir
-/home/xol73553/git/CythonTesting/build/src/CMakeFiles/edit_cache.dir
-/home/xol73553/git/CythonTesting/build/bin/CMakeFiles/rebuild_cache.dir
-/home/xol73553/git/CythonTesting/build/bin/CMakeFiles/X-Ray_Simulation.dir
-/home/xol73553/git/CythonTesting/build/bin/CMakeFiles/edit_cache.dir
