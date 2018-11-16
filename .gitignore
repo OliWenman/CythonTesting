@@ -33,4 +33,4 @@
 
 # gedit temp files
 *~
-*build/
+build
