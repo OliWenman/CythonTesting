@@ -12,4 +12,4 @@ cmake -DCMAKE_CXX_COMPILER=/dls_sw/apps/gcc/8.1.0/bin/g++ -DCMAKE_C_COMPILER=/dl
 make
 
 Can either run the exectuable created in build/bin or run the run.py scipt from the source file.
-If you have built it somewhere else, make sure to change the path of where the sim.so file is created in the run.py file to run it
+If you have built it somewhere else, make sure to change the path of where the sim.so file is located in the run.py file to run it
