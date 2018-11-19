@@ -12,12 +12,12 @@ set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_LIST_DIR}/cmake )
 # Instruction for use can be found at the top of cmake/UseCython.cmake.
 include( UseCython )
 
-# Finds Geant4. Fails to find it but still works...
 find_package(Geant4 REQUIRED)
-if(GEANT4_FOUND)
-  	message("Found Geant4 " ${PYTHON_VERSION_STRING})
+if(Geant4_FOUND)
+	#get_filename_component( _geant4_path ${Geant4} PATH )
+  	message("-- Found Geant4 " ${Geant4_VERSION})
 else()
-  	message("-- Geant4 wasn't found")
+  	message("-- Was unable to find Geant4")
 endif()
 
 # With CMake, a clean separation can be made between the source tree and the
